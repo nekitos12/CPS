@@ -1,0 +1,95 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $screen-md) {
+    flex-direction: row;
+    padding: 0 24px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 0 28px 0 34px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+
+  &__show-more::before{
+    background: url("../img/content/expand.svg") 50% 50% no-repeat;
+  }
+
+
+  &__descr {
+    margin-bottom: 16px;
+    padding: 0 16px;
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 0px;
+      padding: 0;
+    }
+  }
+  &__text {
+    white-space: wrap;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $text-main;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    @media screen and (min-width: $screen-md) {
+      line-height: 20px;
+      margin-bottom: 26px;
+      max-height: 160px;
+    }
+    @media screen and (min-width: $screen-lg) {
+      margin-bottom: 14px;
+    }
+  }
+  &__col2 {
+    margin: 0 auto;
+    height: 176px;
+    @media screen and (min-width: $screen-md) {
+      margin-left: 48px;
+      width: 360px;
+      height: 208px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      margin-left: 36px;
+      height: 307px;
+      width: 530px;
+    }
+  }
+
+  &__photo{
+    height: 176px;
+    @media screen and (min-width: $screen-md) {
+      border-radius: 6px;
+      height: 208px;
+      width: 360px;
+    }
+    @media screen and (min-width: $screen-lg) {
+      height: 307px;
+      width: 531px;
+    }
+
+  }
+  &__tablet,
+  &__desktop {
+    display: none;
+  }
+
+  &__tablet{
+    @media screen and (min-width: $screen-md) {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  &__desktop{
+    @media screen and (min-width: $screen-lg) {
+      display: inline;
+    }
+  }
+
+
+}

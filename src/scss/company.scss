@@ -1,0 +1,40 @@
+
+.company {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  width: 240px;
+  height: 72px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  @media screen and (min-width: $screen-md) {
+    width: 224px !important;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 240px;
+  }
+
+  &::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background: url("../img/service/go.svg");
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+
+
+  &__logo {
+    display: block;
+    max-width: 50%;
+    max-height: 60%;
+  }
+}
+

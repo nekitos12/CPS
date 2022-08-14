@@ -1,0 +1,20 @@
+.main {
+  margin-bottom: 40px;
+
+  height: auto;
+
+  @media screen and (min-width: 767.98px) {
+    padding: 24px 0px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1365.98px) {
+    padding-top: 42px;
+
+  }
+}
+
+@import 'head.scss';
+@import 'menu.scss';
+@import 'show-more.scss';

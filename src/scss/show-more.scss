@@ -1,0 +1,25 @@
+.show-more {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $text-main;
+  font-weight: 500;
+  white-space: nowrap;
+  width: 132px;
+  position: relative;
+  text-align: left;
+  padding-left: 32px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.show-more-click::before {
+  transform: rotate(180deg);
+}
+

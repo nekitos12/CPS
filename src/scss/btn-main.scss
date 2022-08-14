@@ -1,0 +1,38 @@
+
+
+.btn-main{
+  font-size: 12px;
+  line-height: 24px;
+  background: $red-main;
+  position: relative;
+  display: inline-block;
+  border-radius: 16px;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 700;
+  transition: all .3s;
+  padding: 4px 39px 4px 12px;
+  width: auto;
+  letter-spacing: -0.15px;
+
+  &:hover{
+    background-color: $btn-hover;
+  }
+
+  &::after{
+    content:"";
+    position: absolute;
+    top:11px;
+    right: 18px;
+    background-image: url("../img/offer/dropdown.svg");
+    background-repeat: no-repeat;
+    width: 7px;height: 10px;
+  }
+
+}
+
+.btn-main-offer-wrapper{
+position:absolute;
+    right: 16px;
+    bottom: 16px;
+  }

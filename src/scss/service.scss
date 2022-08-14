@@ -1,0 +1,122 @@
+
+.service-logo {
+  width: 288px;
+  margin: 0 auto;
+
+  height: auto;
+
+  @media screen and (min-width: $screen-md) {
+    height: 160px;
+    padding: 0;
+    width: 720px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $screen-lg) {
+    width: 1056px;
+  }
+
+  &__wrapper{
+    @media screen and (min-width: $screen-md) {
+      display: grid;
+      gap: 16px 24px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (min-width: $screen-lg) {
+      column-gap: 32px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &__wrapper-click{
+    @media screen and (min-width: $screen-md) {
+      height: auto;
+    }
+  }
+
+  &__slide {
+    vertical-align: middle;
+    margin-bottom: 16px;
+    width: 240px !important;
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 0;
+      display: block;
+      width: 224px !important;
+      height: auto;
+      margin-right: 0;
+    }
+  }
+
+  &__slide_hide{
+    @media screen and (min-width: $screen-md) {
+      display: none;
+    }
+    @media screen and (min-width: $screen-lg) {
+      display: block;
+    }
+  }
+}
+
+.service {
+  width: 100%;
+  height: auto;
+
+  &__show-more::before{
+    background: url("../img/service/expand.svg") 50% 50% no-repeat;
+  }
+
+  & + &{
+    margin-top: 24px;
+  }
+  &__header {
+    background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
+    padding: 16px;
+    margin-bottom: 16px;
+    width: auto;
+
+    @media screen and (min-width: $screen-md) {
+      padding-left: 24px;
+    }
+    @media screen and (min-width: $screen-lg) {
+      padding-left: 32px;
+    }
+  }
+  &__title {
+    font-family: "TT Lakes";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+
+    color: $text-light;
+  }
+
+  &__show-more {
+    margin: 24px 0 0 24px;
+    display: none;
+    @media screen and (min-width: $screen-md) {
+      display: block;
+    }
+  }
+
+
+
+
+}
+
+
+
+@media screen and (min-width: 767.98px) {
+  .service-click {
+    height: auto;
+  }
+  .service-logo-click {
+    height: auto;
+  }
+}
+
+
+@import 'company.scss';
+@import 'swiper.scss'

@@ -1,0 +1,67 @@
+.btn-list {
+  display: flex;
+
+  &__item + &__item {
+    margin-left: 16px;
+  }
+}
+
+.header {
+  height: 88px;
+  border-bottom: 1px solid $divider;
+  margin-bottom: 24px;
+  background-color: $white;
+
+
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+  }
+
+  &__container {
+    padding: 19px 16px;
+  }
+  &__inner,
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__divider + .btn {
+    margin-right: 0px;
+  }
+
+  &__divider {
+    margin: 0 20px;
+    width: 2px;
+    height: 32px;
+    background: $divider-grey;
+    border-radius: 1px;
+  }
+  &__divider-logo,
+  &__tablet {
+    display: none;
+  }
+
+  &__divider-logo{
+    @media screen and (min-width: $screen-md) {
+      display: inline-block;
+    }
+  }
+
+  &__tablet{
+    @media screen and (min-width: $screen-md) {
+      display: flex;
+    }
+  }
+  .header__divider-logo + .btn {
+    @media screen and (min-width: $screen-md) {
+      margin-left: 0;
+    }
+  }
+}
+@import 'btn.scss';
+@import 'logo.scss';
+
+
+

@@ -1,0 +1,25 @@
+
+.lang {
+  display: flex;
+
+  &__btn:hover {
+    color: $text-light;
+    cursor: pointer;
+  }
+
+  &__item + &__item {
+    margin-left: 7px;
+  }
+
+  &__btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    transition-duration: 0.3s;
+  }
+}
+
+

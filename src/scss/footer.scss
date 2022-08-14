@@ -1,0 +1,47 @@
+.footer{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border-top: 1px solid $divider;
+  text-align: center;
+  color: $text-light;
+  opacity: 0.72;
+  padding: 16px;
+
+
+
+
+
+  &__list-item + &__list-item{
+    margin-top: 16px;
+    @media screen and (min-width: $screen-md) {
+      margin-top: 0;
+      width: 33%;
+    }
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $screen-md) {
+      flex-direction: row;
+      align-items: start;
+      justify-content: space-between;
+    }
+
+  }
+  &__copyright{
+    @media screen and (min-width: $screen-md) {
+      text-align: left;
+    }
+
+  }
+  &__info{
+    @media screen and (min-width: $screen-md) {
+      text-align: right;
+    }
+  }
+
+
+}
+
+

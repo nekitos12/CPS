@@ -1,0 +1,77 @@
+.popup-burger{
+
+  @media screen and (min-width: $screen-xl) {
+    display: block !important;
+    width: 320px;
+  }
+
+  &__header{
+    margin-bottom: 22px;
+  }
+  &__container {
+    padding: 19px 16px 0px 16px;
+    height: 100%;
+    background: $white;
+    box-sizing: border-box;
+
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+    width: 320px;
+    @media screen and (min-width: 358.98px) {
+      width: 360px;
+      padding: 19px 24px 0px 24px;
+    }
+    @media screen and (min-width: $screen-xl) {
+
+      width: 320px;
+      box-shadow: none;
+      position: fixed;
+      height: 100vh;
+
+  }
+  }
+
+  &__header-container {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__footer {
+    position: absolute;
+    bottom: 32px;
+  }
+  &__footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__footer-row1 {
+    margin-bottom: 40px;
+  }
+
+  &__footer-email,
+  &__footer-tel {
+    display: block;
+  }
+  &__footer-email {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0 12px;
+  }
+  &__footer-tel {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+  }
+
+  &__close {
+    @media screen and (min-width: $screen-xl) {
+      display: none;
+    }
+
+  }
+
+
+}

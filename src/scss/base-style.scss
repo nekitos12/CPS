@@ -1,0 +1,44 @@
+body {
+  font-family: TT Lakes, sans-serif;
+  background-color: $bg-main;
+}
+ul{
+  list-style-type:none;
+  padding-inline-start: 0px;
+  margin: 0;
+}
+a {
+  color: $text-main;
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+h1 {
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+input {
+  border: none
+}
+
+.wrapper{
+  width: auto;
+  @media screen and (min-width: 1439.98px) {
+    min-width: 1120px;
+    margin-left: 320px;
+  }
+}
+
+.hidden {
+  display: none !important;
+}

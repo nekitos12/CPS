@@ -1,0 +1,156 @@
+.offer {
+  display: flex;
+  flex-direction: column;
+
+
+  &__btn-text::after{
+    content: '';
+    background: url('../img/offer/offer__arrow.svg');
+    position: absolute;
+    right: -15px;
+    bottom: 4px;
+    width: 9px;
+    height: 12px;
+  }
+
+
+  &__title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -22px;
+    opacity: 0.72;
+    @media screen and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+  &__title_service::before{
+    content: 'Ремонтные услуги'
+  }
+  &__title_price::before{
+    content: 'Цена'
+  }
+  &__title_time::before{
+    content: 'Срок'
+  }
+
+  &__list-item{
+    height: 200px;
+    box-sizing: border-box;
+    background: $white;
+    border: 1px solid $border-grey;
+    border-radius: 6px;
+    width: 260px !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-light;
+    display: flex;
+    flex-direction: column;
+    padding: 36px 16px 20px 16px;
+
+    position: relative;
+
+    @media screen and (min-width: $screen-md) {
+      display: grid;
+      grid-template-columns: minmax(372px,460px) minmax(100px,400px) 230px 120px;
+      width: 100% !important;
+      padding: 23px 16px;
+      height: auto;
+      align-items: center;
+    }
+    @media screen and (min-width: $screen-lg) {
+      width: 240px;
+    }
+  }
+
+  &__item{
+    height: auto;
+    @media screen and (min-width: $screen-md) {
+      width: 100%;
+    }
+  }
+  &__list{
+    display: flex;
+    width: auto !important;
+    @media screen and (min-width: $screen-md) {
+      padding: 0 24px;
+      flex-direction: column;
+    }
+  }
+  &__title{
+
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $text-main;
+    position: relative;
+  }
+
+  &__text{
+    padding: 0 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    box-sizing: border-box;
+    letter-spacing: 0.2px;
+    color: $text-main;
+    @media screen and (min-width: $screen-md) {
+      padding: 0 24px;
+      &-item{
+        max-width: 420px;
+      }
+    }
+  }
+  &__text-item + &__text-item{
+    margin-top: 18px;
+  }
+  &__btn{
+    padding: 0;
+    text-align: left;
+
+  }
+  &__btn-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $text-main;
+    position: relative;
+  }
+
+
+  &__item + &__item {
+    margin-top: 16px;
+  }
+  &__group + &__group{
+    margin-top: 36px;
+    @media screen and (min-width: $screen-md) {
+      margin-top: 0px;
+    }
+  }
+
+
+
+}
+
+
+
+
+.header-offer{
+  display: none;
+  @media screen and (min-width: 767.98px) {
+    display: grid;
+    background-color: $bg-main;
+    border: none;
+  }
+}
+
+
+
+
+
+
+
+
+@import 'btn-main.scss'

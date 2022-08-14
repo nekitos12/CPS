@@ -1,0 +1,68 @@
+
+.btn {
+  width: 40px;
+  height: 40px;
+  background-color: $red-main;
+  border-radius: 50%;
+  transition: all .3s ;
+
+
+
+
+
+  &:hover{
+    background-color: $btn-hover;
+  }
+  &::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__burger::after {
+    content: "";
+    display: block;
+    background: url(../img/header/burger.svg) 50% 50% no-repeat;
+  }
+  &__profile::after {
+    content: "";
+    display: block;
+    background: url(../img/header/profile.svg) 50% 50% no-repeat;
+  }
+
+
+  &__call::after {
+    content: "";
+    display: block;
+    background: url(../img/header/call.svg) 50% 50% no-repeat;
+  }
+  &__feedback::after {
+    content: "";
+    display: block;
+    background: url(../img/header/feedback.svg) 50% 50% no-repeat;
+  }
+
+  &__repair::after {
+    content: "";
+    display: block;
+    background: url(../img/header/repair.svg) 50% 50% no-repeat;
+  }
+
+  &__check::after {
+    content: "";
+    display: block;
+    background: url(../img/header/checkstatus.svg) 50% 50% no-repeat;
+  }
+
+  &__close::after {
+    content: "";
+    display: block;
+    background: url(../img/header/close.svg) 50% 50% no-repeat;
+
+  }
+  &__search::after {
+    content: "";
+    display: block;
+    background: url(../img/header/search.svg) 50% 50% no-repeat;
+  }
+
+}

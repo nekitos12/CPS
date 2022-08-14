@@ -1,0 +1,101 @@
+.popup {
+
+  position: absolute;
+  background-color:rgba(255,255,255,0.96);
+  height: 676px;
+  z-index: 11;
+  left: 0;
+  top:0;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-light;
+  width: 100%;
+
+
+  &__container {
+    position: relative;
+    height: 100vh;
+
+  }
+  &__inner{
+    left: calc(100% - 320px);
+    position: absolute;
+    padding: 24px 16px 0px 16px;
+    height: 100%;
+    background: $white;
+    box-sizing: border-box;
+
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+    width: 320px;
+    @media screen and (min-width: 358.98px) {
+      width: 360px;
+      left: calc(100% - 360px);
+    }
+    @media screen and (min-width: $screen-md) {
+      width: 400px;
+      left: calc(100% - 400px);
+      padding: 32px 24px 0 24px;
+    }
+    @media screen and (min-width: $screen-lg) {
+      width: 440px;
+      left: calc(100% - 440px);
+      padding: 40px 40px 0 40px;
+    }
+
+  }
+  &__header{
+    margin-bottom: 24px;
+    display: flex;
+
+    flex-direction: column;
+    @media screen and (min-width: $screen-md) {
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      left:-105px;
+    }
+    @media screen and (min-width: $screen-lg) {
+      left:-113px;
+    }
+  }
+
+
+  &__title{
+    font-size: 24px;
+    line-height: 32px;
+    color: $text-main;
+  }
+  &__header-item + &__header-item{
+    margin-top: 40px;
+    @media screen and (min-width: $screen-md) {
+      margin-top: 0px;
+      margin-left: 65px;
+    }
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+  }
+  &__footer-link{
+    color: $red-main;
+  }
+  &__btn-main{
+    align-self: flex-end;
+    padding-left: 20px;
+  }
+  &__logo{
+    @media screen and (min-width: $screen-md) {
+      margin-left: 17px;
+    }
+    @media screen and (min-width: $screen-xl) {
+      margin-left: 0px;
+    }
+  }
+
+}
+
+
+@import 'nav.scss';
+@import 'lang.scss';
