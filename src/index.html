@@ -47,16 +47,16 @@
       <main class="main">
         <header class="head">
           <div class="head__title">
-            <h1 class="head__h1 h1-title">Услуги и сервисы</h1>
+            <h1 class="head__h1 title">Услуги и сервисы</h1>
             <div class="head__items">
-              <a href="#" class="head__items-col">
+              <label class="head__items-col">
                 Оставить заявку
                 <button class="btn btn__repair head__items-img"></button>
-              </a>
-              <a href="#" class="head__items-col">
+              </label>
+              <label class="head__items-col">
                 Статус ремонта
                 <button class="btn btn__check head__items-img"></button>
-              </a>
+              </label>
             </div>
           </div>
 
@@ -83,8 +83,8 @@
             </ul>
           </nav>
         </header>
-        <section class="content">
-          <div class="content__descr content__col1">
+        <article class="content">
+          <div class="content__descr">
             <p class="content__text">
               Мы являемся авторизованным сервисным центром по ремонту техники
               Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
@@ -102,18 +102,16 @@
               >Читать далее</button
             >
           </div>
-          <div class="content__col2">
+          <div class="content__img">
             <img
               class="content__photo"
               src="./img/content/content__photo.jpg"
               alt=""
             />
           </div>
-        </section>
+        </article>
         <section class="service logotype">
-          <header class="service__header">
-            <h1 class="service__title">Ремонт техники различных брендов</h1>
-          </header>
+          <h2 class="service__title">Ремонт техники различных брендов</h2>
           <div class="service-logo swiper">
             <!-- Additional required wrapper -->
             <div class="service-logo__wrapper swiper-wrapper">
@@ -220,9 +218,8 @@
           </button>
         </section>
         <section class="service device">
-          <header class="service__header">
-            <h1 class="service__title">Ремонт различных видов техники</h1>
-          </header>
+          <h2 class="service__title">Ремонт различных видов техники</h2>
+
           <div class="service-logo swiper">
             <!-- Additional required wrapper -->
             <div class="service-logo__wrapper swiper-wrapper">
@@ -275,9 +272,7 @@
           </button>
         </section>
         <section class="service price">
-          <header class="service__header">
-            <h1 class="service__title">цены на услуги</h1>
-          </header>
+          <h2 class="service__title">цены на услуги</h2>
           <div class="offer">
             <div class="service-logo swiper offer__item">
               <!-- Additional required wrapper -->
@@ -403,21 +398,19 @@
         </section>
       </main>
       <footer class="footer">
-        <ul class="footer__list">
-          <li class="footer__list-item footer__copyright">
+        <div class="footer__inner">
+          <div class="footer__copyright">
             <p>© 2019 CPS</p> Разработано командой Apesong
-          </li>
-          <li class="footer__list-item footer__politic">
-            Политика конфиденциальности
-          </li>
-          <li class="footer__list-item footer__info">
+          </div>
+          <div class="footer__politic"> Политика конфиденциальности </div>
+          <div class="footer__info">
             Информация, размещенная на данной странице, не является публичной
             офертой
-          </li>
-        </ul>
+          </div>
+        </div>
       </footer>
     </div>
-    <section class="popup popup-burger hidden">
+    <div class="popup popup-burger hidden">
       <div class="popup-burger__container popup-area">
         <header class="popup-burger__header">
           <div class="popup-burger__header-container">
@@ -457,7 +450,7 @@
         </nav>
         <footer class="popup-burger__footer">
           <div class="popup-burger__footer-container">
-            <div class="popup-burger__footer-row1">
+            <div class="popup-burger__footer-row">
               <ul class="btn-list">
                 <li class="btn-list__item">
                   <button class="btn btn__call popup-open"></button>
@@ -476,7 +469,7 @@
                 >8 800 890 8900</a
               >
             </div>
-            <div class="popup-burger__footer-row2">
+            <div class="popup-burger__footer-row">
               <ul class="lang">
                 <li class="lang__item">
                   <button type="button" class="lang__btn">ru</button>
@@ -492,14 +485,14 @@
           </div>
         </footer>
       </div>
-    </section>
-    <section class="popup popup-feedback hidden">
+    </div>
+    <div class="popup popup-feedback hidden">
       <div class="popup__container">
         <div class="popup__inner popup-area">
           <header class="popup__header">
             <button class="btn btn__close popup-btn popup__header-item">
             </button>
-            <h1 class="popup__title popup__header-item h1-title">
+            <h1 class="popup__title popup__header-item title">
               Обратная связь
             </h1>
           </header>
@@ -551,14 +544,14 @@
           </form>
         </div>
       </div>
-    </section>
-    <section class="popup popup-call hidden">
+    </div>
+    <div class="popup popup-call hidden">
       <div class="popup__container">
         <div class="popup__inner popup-area">
           <header class="popup__header">
             <button class="btn btn__close popup-btn popup__header-item">
             </button>
-            <h1 class="popup__title popup__header-item h1-title">
+            <h1 class="popup__title popup__header-item title">
               Заказать звонок
             </h1>
           </header>
@@ -586,6 +579,6 @@
           </form>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>

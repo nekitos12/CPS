@@ -7,9 +7,9 @@
 
   @media screen and (min-width: $screen-md) {
     height: 160px;
-    padding: 0;
+    padding: 15px;
     width: 720px;
-    margin: 0 auto;
+    margin: -15px auto;
   }
   @media screen and (min-width: $screen-lg) {
     width: 1056px;
@@ -67,11 +67,21 @@
   & + &{
     margin-top: 24px;
   }
-  &__header {
+
+  &__title {
+    font-family: "TT Lakes";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
     padding: 16px;
     margin-bottom: 16px;
     width: auto;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+
+    color: $text-light;
 
     @media screen and (min-width: $screen-md) {
       padding-left: 24px;
@@ -79,18 +89,6 @@
     @media screen and (min-width: $screen-lg) {
       padding-left: 32px;
     }
-  }
-  &__title {
-    font-family: "TT Lakes";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-
-    color: $text-light;
   }
 
   &__show-more {

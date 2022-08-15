@@ -12,32 +12,36 @@
 
 
 
-  &__list-item + &__list-item{
-    margin-top: 16px;
-    @media screen and (min-width: $screen-md) {
-      margin-top: 0;
-      width: 33%;
-    }
-  }
-  &__list{
+
+  &__inner{
     display: flex;
     flex-direction: column;
+    gap: 16px;
     @media screen and (min-width: $screen-md) {
       flex-direction: row;
       align-items: start;
       justify-content: space-between;
+      gap:0
     }
 
   }
   &__copyright{
     @media screen and (min-width: $screen-md) {
       text-align: left;
+      flex: 1 0 33%
     }
 
+  }
+  &__politic{
+    @media screen and (min-width: $screen-md) {
+
+      flex: 1 0 33%
+    }
   }
   &__info{
     @media screen and (min-width: $screen-md) {
       text-align: right;
+      flex: 1 0 33%
     }
   }
 

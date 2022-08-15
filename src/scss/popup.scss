@@ -2,7 +2,8 @@
 
   position: absolute;
   background-color:rgba(255,255,255,0.96);
-  height: 676px;
+  height: 100vh;
+  min-height: 660px;
   z-index: 11;
   left: 0;
   top:0;
@@ -80,6 +81,10 @@
   }
   &__footer-link{
     color: $red-main;
+    transition: all .6s;
+    &:hover{
+      color: $btn-hover;
+    }
   }
   &__btn-main{
     align-self: flex-end;

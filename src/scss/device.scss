@@ -17,9 +17,12 @@
   align-items: top;
   justify-content: space-between;
   position: relative;
-
+  transition: all .3s;
   @media screen and (min-width: 767.98px) {
     width: 224px;
+    &:hover{
+      box-shadow: 0 0 20px -10px black;
+    }
   }
   @media screen and (min-width: 1365.98px) {
     width: 240px;

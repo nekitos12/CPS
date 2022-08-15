@@ -11,9 +11,12 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-
+  transition: all .3s;
   @media screen and (min-width: $screen-md) {
     width: 224px !important;
+    &:hover{
+      box-shadow: 0 0 20px -10px black;
+    }
   }
 
   @media screen and (min-width: $screen-lg) {

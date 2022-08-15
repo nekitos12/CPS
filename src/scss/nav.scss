@@ -40,7 +40,10 @@
   }
 
   &__item + &__item {
-    margin-top: 28px;
+    margin-top: 20px;
+    @media screen and (min-width: $screen-md) {
+      margin-top:28px;
+    }
   }
 
   &__link {

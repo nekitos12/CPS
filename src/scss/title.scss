@@ -1,0 +1,29 @@
+
+.title{
+  font-weight: bold;
+      letter-spacing: -0.6px;
+      color: $text-main;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 36px;
+        width: 4px;
+        left: -17px;
+        top: 0px;
+        border-radius: 3px;
+        position: absolute;
+        background: $divider;
+      }
+      @media screen and (min-width: 767.98px) {
+        &::before{
+          left: -25px;
+        }
+      }
+      @media screen and (min-width: 1365.98px) {
+        &::before{
+          left: -34px;
+        }
+      }
+  }
