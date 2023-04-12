@@ -1,3 +1,10 @@
+
+
+# Ссылка на Github Pages: https://nekitos12.github.io/cps/dist/index
+
+
+
+
 # Webpack Static Site Starter Kit
 
 ## Требования к проекту
